@@ -8,9 +8,19 @@
     <title>Vite App</title>
   </head>
   <body>
-    <main class="container">
-      <img src="worldsprings-map.webp" alt="Woldspring map" />
-      <div id="app"></div>
+    <main classname="container">
+      <div class="container__relative">
+        <!-- clock -->
+        <div id="clock" class="clock">
+          <h1 id="time"></h1>
+        </div>
+
+        <!-- map and pools -->
+        <div class="wrapper" style="width: 1600px; height: 900px">
+          <img src="worldsprings-map.webp" alt="Woldspring map" />
+          <div class="wrapper__pools" id="app" />
+        </div>
+      </div>
     </main>
     <script type="module" src="/main.js"></script>
   </body>
