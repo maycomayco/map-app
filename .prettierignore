@@ -1,0 +1,10 @@
+pnpm-lock.yaml
+node_modules/
+coverage/
+.idea/
+.next/
+.vscode/
+build/
+.lintstagedrc
+public/
+dist/

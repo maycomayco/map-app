@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Vite App</title>
+    <title>Woldspring Map</title>
   </head>
   <body>
-    <main classname="container">
+    <main class="container">
+      <!-- Fixed classname to class -->
       <div class="container__relative">
         <!-- clock -->
         <div id="clock" class="clock">
@@ -16,9 +17,10 @@
         </div>
 
         <!-- map and pools -->
-        <div class="wrapper" style="width: 1600px; height: 900px">
+        <div class="wrapper" id="map-and-pools">
           <img src="worldsprings-map.webp" alt="Woldspring map" />
-          <div class="wrapper__pools" id="app" />
+          <div class="wrapper__pools" id="app"></div>
+          <!-- Fixed self-closing div -->
         </div>
       </div>
     </main>
