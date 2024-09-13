@@ -9,7 +9,6 @@
   </head>
   <body>
     <main class="container">
-      <!-- Fixed classname to class -->
       <div class="container__relative">
         <!-- clock -->
         <div id="clock" class="clock">
@@ -19,7 +18,12 @@
         <!-- map and pools -->
         <div class="wrapper" id="map-and-pools">
           <img src="worldsprings-map.webp" alt="Woldspring map" />
-          <div class="wrapper__pools" id="app"></div>
+          <!-- TODO: remove the inline styles after configure the big screen feature -->
+          <div
+            class="wrapper__pools"
+            id="pools-container"
+            style="width: 1600px; height: 900px"
+          ></div>
           <!-- Fixed self-closing div -->
         </div>
       </div>
