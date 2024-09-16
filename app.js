@@ -1,15 +1,15 @@
-import { startClock } from './lib/clock';
+import { startClock as Clock } from './components/clock';
 import { fetchData } from './lib/fetchData';
-import { updateMapAndPoolsSize } from './lib/utils';
-import { renderPools } from './lib/renderPools';
+import { updateMapAndPoolsSize as Map } from './components/map';
+import { pools } from './components/pools';
 
 async function initApp() {
-  updateMapAndPoolsSize();
-  startClock();
+  Map();
+  Clock();
   try {
     const poolsData = await fetchData();
 
-    renderPools(poolsData);
+    pools(poolsData);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Error initializing app:', error);

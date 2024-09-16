@@ -9,25 +9,21 @@
   </head>
   <body>
     <main class="container">
-      <div class="container__relative">
-        <!-- clock -->
+      <div class="container__wrapper">
         <div id="clock" class="clock">
           <h1 id="time"></h1>
         </div>
 
-        <!-- map and pools -->
-        <div class="wrapper" id="map-and-pools">
-          <img src="worldsprings-map.webp" alt="Woldspring map" />
-          <!-- TODO: remove the inline styles after configure the big screen feature -->
-          <div
-            class="wrapper__pools"
-            id="pools-container"
-            style="width: 1600px; height: 900px"
-          ></div>
-          <!-- Fixed self-closing div -->
+        <div class="map-and-pools" id="map-and-pools">
+          <img
+            src="worldsprings-map.webp"
+            alt="Woldspring map"
+            class="map-and-pools__img"
+          />
+          <!-- Pools SVG will be rendered here -->
         </div>
       </div>
     </main>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/app.js"></script>
   </body>
 </html>
