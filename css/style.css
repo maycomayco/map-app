@@ -17,16 +17,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2 {
+  letter-spacing: -0.03rem;
+  line-height: 1;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  /* min-width: 320px; */
 }
 
 h1 {
   font-size: 4.2rem;
-  line-height: 1;
 }
 
 #app {
@@ -70,12 +75,61 @@ h1 {
 .clock {
   position: absolute;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 12px;
   border-radius: 8px;
   color: white;
-  left: 10px;
-  top: 10px;
+  left: 1%;
+  top: 1%;
   min-width: 360px;
   text-align: center;
+}
+
+.occupancy-levels {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 24px;
+  color: white;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 8px;
+}
+
+.occupancy-levels__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.occupancy-levels__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.occupancy-levels__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.occupancy-levels__indicator {
+  width: 32px;
+  height: 16px;
+}
+
+.occupancy-levels__indicator--green {
+  background-color: green;
+}
+
+.occupancy-levels__indicator--yellow {
+  background-color: yellow;
+}
+
+.occupancy-levels__indicator--red {
+  background-color: red;
+}
+
+.occupancy-levels__percentage {
+  font-size: 1.2rem;
 }
