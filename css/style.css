@@ -1,8 +1,9 @@
 @import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
 :root {
   /* TODO: add font from google fonts */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,8 +25,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 4.2rem;
+  line-height: 1;
 }
 
 #app {
@@ -34,19 +35,6 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 
 .container {
   display: grid;
@@ -86,4 +74,8 @@ h1 {
   padding: 12px;
   border-radius: 8px;
   color: white;
+  left: 10px;
+  top: 10px;
+  min-width: 360px;
+  text-align: center;
 }
